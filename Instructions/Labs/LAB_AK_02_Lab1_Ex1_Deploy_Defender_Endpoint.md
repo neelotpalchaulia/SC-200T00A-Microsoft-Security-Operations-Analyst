@@ -4,17 +4,15 @@
 
 You are a Security Operations Analyst working at a company that is implementing Microsoft Defender for Endpoint. Your manager plans to onboard a few devices to provide insight into required changes to the Security Operations (SecOps) team response procedures.
 
-You start by initializing the Defender for the Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
+You start by onboarding the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Task 1: Preparing the Microsoft 365 Defender workspace
-- Task 2: Initialize Microsoft Defender for Endpoint
-- Task 3: Onboard a Device
-- Task 4: Configure Roles
-- Task 5: Configure Device Groups
+- Task 1: Onboard a Device
+- Task 2: Configure Roles
+- Task 3: Configure Device Groups
 
 ## Estimated timing: 60 minutes
 
@@ -22,56 +20,7 @@ In this lab, you will perform the following:
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
 
-### Task 1: Preparing the Microsoft 365 Defender workspace
-
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Home** from the left.
-
-    >**Note:** You may need to scroll all the way to the menu top.
-
-1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
-
-1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
-
-    >**Hint:** It should be at the bottom right of the tiles.
-
-1. Select the button that says **Turn new features on.**
-
-1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
-
-    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
-
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
-
-### Task 2: Initialize Microsoft Defender for Endpoint
-
-In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
-
-1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
-
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
-
-1. On the **Settings** page select **Device discovery**. 
-
-    ![Picture 1](../Media/SC200-img1.png)
-
-    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 wait for 10-15 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
-
-1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
-    >**Hint:** If you do not see the option, refresh the page.
-
-### Task 3: Onboard a Device
+### Task 1: Onboard a Device
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -121,7 +70,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Task 4: Configure Roles
+### Task 2: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -143,7 +92,7 @@ In this task, you will configure roles for use with device groups.
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT** |
-    |Azure AD roles can be assigned to the group| **Yes** |
+    |Microsoft Entra ID roles can be assigned to the group| **Yes** |
 
 1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
@@ -172,7 +121,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
 
-### Task 5: Configure Device Groups
+### Task 3: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
