@@ -54,7 +54,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Select **Onboarding** in the Device Management section.
 
-    >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
+    >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select **Devices**. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
 1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
@@ -132,7 +132,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Turn on roles** button.
 
-1. Select **+ Add Role**. by clicking three dots
+1. Select **+ Add Role**.
 
 1. In the Add role dialog enter the following:
 
@@ -141,7 +141,7 @@ In this task, you will configure roles for use with device groups.
     |Role name|**Tier 1 Support**|
     |Permissions|Live Response capabilities - Advanced|
 
-1. Select the **Assigned user groups** tab on the top. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
+1. Click on **Next** to navigate to the **Assigned user groups** tab. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
 
 1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
 
